@@ -34,6 +34,9 @@ html {
     border-radius: 50%;
 }
 
-#0{
-    background: violet;
+.piece {
+    background: blue;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
 }
