@@ -31,13 +31,6 @@ html {
     cursor: pointer;
 }
 
-/* .cell-select:hover > .piece {
-    background: blue;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-} */
-
 .piece {
     background: blue;
     height: 3.5rem;
