@@ -16,23 +16,27 @@ html {
     height: 5rem;
     width: 5rem;
     margin: 0.1rem;
+    padding: 4px;
 }
 
 .cell {
     border: 2px solid black;
-    padding: 5px;
 }
 
 .cell-select {
-    border: dashed 1px lightgray;
+    /* border: dashed 1px lightgray; */
 }
 
-.cell-select:hover > .piece {
+.cell-select:hover {
+    cursor: pointer;
+}
+
+/* .cell-select:hover > .piece {
     background: blue;
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 50%;
-}
+} */
 
 .piece {
     background: blue;
