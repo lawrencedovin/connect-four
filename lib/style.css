@@ -37,3 +37,11 @@ html {
     width: 3.5rem;
     border-radius: 50%;
 }
+
+.p1 {
+    background: blue;
+}
+
+.p2 {
+    background: red;
+}
