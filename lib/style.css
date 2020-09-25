@@ -5,8 +5,21 @@
     border: 2px solid black;
 } */
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 html {
     font-size: 62.5%;  /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+    background-image: url("../pics/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #gameboard{
