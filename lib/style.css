@@ -1,64 +1,91 @@
 html {
-    font-size: 62.5%;  /* 1rem = 10px, 10px/16px = 62.5% */
+  height: 100%;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
 }
 
 body {
-    background-image: url("../pics/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../pics/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1, span {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    font-size: 3.6rem;
-    margin: 7.2rem 0 3.2rem;
+h1,
+span {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  margin: 5.6rem 0 2.4rem;
 }
 
 h1 {
-    color: #FF9900;
+  color: #3de7fb;
 }
 
 span {
-    color: #3DE7FB;
+  color: #ff9900;
 }
 
-#gameboard{
-    width: 35rem;
-}
-.cell-select, .cell {
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    padding: 0;
-    margin: 4px;
+#cell-select-container,
+#gameboard {
+  width: 35rem;
 }
 
+#gameboard,
+.cell,
+#bottom-piece {
+  background: #fff;
+}
+
+.cell-select,
 .cell {
-    border: 2px solid black;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  padding: 0;
+  margin: 6px;
 }
 
-.cell-select {
-    /* border: dashed 1px lightgray; */
+.cell,
+.p1,
+.p2 {
+  box-shadow: inset 2px 2px 6px 1px rgba(0, 0, 0, 0.25);
+}
+
+#cell-select-container {
+  padding: 0 2.6rem;
+  margin-bottom: 0.8rem;
+}
+
+#gameboard {
+  padding: 2rem 2.6rem;
+  border-radius: 0.4rem;
 }
 
 .cell-select:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .piece {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .p1 {
-    background: blue;
+  background: #3de7fb;
 }
 
 .p2 {
-    background: red;
+  background: #ff9900;
+}
+
+#bottom-piece {
+  width: 37.6rem;
+  height: 20px;
+  box-shadow: 0px -0.5px 3px 0.5px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  margin: 0 auto;
 }
