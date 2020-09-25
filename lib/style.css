@@ -1,6 +1,7 @@
 html {
   height: 100%;
   font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+  /* transition: 1s; */
 }
 
 body {
@@ -46,6 +47,12 @@ span {
   margin: 6px;
 }
 
+.cell-select:hover{
+    /* -ms-transform: translateY(100px);
+   -webkit-transform: translateY(100px); 
+   transform: translateY(100px); */
+}
+
 .cell,
 .p1,
 .p2 {
@@ -74,12 +81,27 @@ span {
   margin: 0;
 }
 
+.p1, .p2 {
+    animation-name: checker-fall;
+    animation-duration: 5s;
+}
+
+
 .p1 {
   background: #3de7fb;
 }
 
 .p2 {
   background: #ff9900;
+}
+
+@keyframes checker-fall {
+	from {
+		transform: translateY(var(--fall-height));
+	}
+	to {
+		transform: translateY(0px);
+	}
 }
 
 #bottom-piece {
