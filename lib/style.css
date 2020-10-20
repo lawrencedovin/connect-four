@@ -58,7 +58,7 @@ span {
 
 #gameboard {
   padding: 2rem 2.6rem;
-  border-radius: 0.4rem;
+  border-radius: 0.4rem 0.4rem 0 0;
 }
 
 #bottom-piece {
